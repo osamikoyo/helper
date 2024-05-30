@@ -11,7 +11,7 @@ var Exts []string
 
 func ext() ([]string ,string) {
 	fmt.Println("Write the path to folder!!( ●ω●)♡")
-	var filep string  = repeat()
+	filep := repeat()
 	filas = slicefiles(filep)
 	for i:= 0; i < len(filas); i++{
 		flext := filepath.Ext(filas[i])
@@ -25,6 +25,7 @@ func org(){
 	fl := slicefiles(f)
 	for i:= 0; i < len(fl); i++{
 		os.Rename(f + "/" + fl[i], f + "/" + ex[i] + "/" + fl[i])
+		
 	}
 	
 }

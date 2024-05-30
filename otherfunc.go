@@ -9,9 +9,10 @@ import (
 )
 var fls []string
 func repeat() string {
-	scanner := bufio.NewScanner(os.Stdin)
-	scanner.Scan()
+	
 	for true {
+		scanner := bufio.NewScanner(os.Stdin)
+	    scanner.Scan()
 		res = scanner.Text()
 		
 		if res != ""{
