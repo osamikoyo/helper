@@ -5,7 +5,7 @@ import (
 	"os"
 
 )
-var path, command, doubles string
+var path, command, doubles, res string
 
 
 

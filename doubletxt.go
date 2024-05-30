@@ -13,9 +13,10 @@ func double() string {
 	fmt.Println("pleace!! write path to first file!( ◕ω◕)/ ^⇀ﻌ↼^")
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
-	var filefirstPath string = scanner.Text()
+	var filefirstPath string = repeat()
+	
 	fmt.Println("Now! Write path to second file!(=◕ᆽ◕=)ฅ")
-	var filesenodpath string = scanner.Text()
+	var filesenodpath string = repeat()
 		file, _ := os.Open(filefirstPath)
 	
 		defer file.Close()
@@ -27,7 +28,7 @@ func double() string {
 			results = append(results, line)
 			fmt.Println(line)
 		}
-		for i, _ := range results {
+		for i , _:= range results {
 			cont = cont + results[i]
 		}
 
