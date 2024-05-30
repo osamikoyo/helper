@@ -15,6 +15,9 @@ func main() {
 	for true{
 		fmt.Fscan(os.Stdin, &command)
 	switch command{
+	default:
+		fmt.Println("Oh.. I cant understand you(╥Д╥)")
+		fmt.Println("But!! write 'commands' for understand my functions!(´•ᴥ•`)♥")
 	case "yumi":
 		fmt.Println("yumi can - ")
 		fmt.Println("Writing and reading groups txt files(ᵒ˵ᗜ˵ᵒ🌸)")
@@ -35,6 +38,8 @@ func main() {
 	case "doubletxt":
 		doubles = double()
 		fmt.Println(doubles + "\n" + "Thats all!")
+	case "org":
+		org()
 	}
 	}
 	

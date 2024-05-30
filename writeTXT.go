@@ -5,7 +5,7 @@ import(
 	"fmt"
 
 )
-var filepath string = "C:/Users/Turbo Boost/Documents/Texts"
+var fileath string = "C:/Users/Turbo Boost/Documents/Texts"
 var namefile string
 var text string
 
@@ -21,8 +21,8 @@ func base(){
 	fmt.Fscan(os.Stdin, &text)
 	
 	
-	fmt.Println(filepath + namefile)
-	write(text, namefile, filepath)
+	fmt.Println(fileath + namefile)
+	write(text, namefile, fileath)
 }
 func write(text string, namefile string, pathfile string){
 	file, err := os.Create(pathfile +"/" + namefile + ".txt")
