@@ -24,8 +24,13 @@ func org(){
 	checkAndCreateFolders(f, ex)
 	fl := slicefiles(f)
 	for i:= 0; i < len(fl); i++{
+		if i >= len(fl) || i >= len(ex) {
+			fmt.Println("a")
+			break
+			}
 		os.Rename(f + "/" + fl[i], f + "/" + ex[i] + "/" + fl[i])
 		
+		fmt.Println("f")
 	}
 	
 }
